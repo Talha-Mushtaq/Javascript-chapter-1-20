@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter 14-16 (Javascript)</title>
+</head>
+<body>
+    <h1 style="color: rebeccapurple;text-align: center">Chapter 14-16 ( Javascript )</h1>
+    <h4 id="qual"></h4>
+    <h4 id="record"></h4>
+    <h4 id="color"></h4>
+    <h4 id="record"></h4>
+    <h4 id="std"></h4>
+    <h4 id="jon"></h4>
+
+</body>
+<script>
+    // QUestion 1
+   var sn1 = [];
+
+    // QUestion 2
+
+   var sn2 = {};
+    // QUestion 3
+    var sn3 = ["1","2","3"];
+    // QUestion 4
+    var sn4 = [1,2,3];
+    // QUestion 5
+    var sn5 = [true,false];
+    // QUestion 6
+    var sn6 = ["1",2,true];
+
+    // QUestion 7
+
+   var sn7  = ["SC", "HSC", "BCS","BS", "BCOM", "MS", "M. Phil.", "PhD"];  
+
+   var qulification="<h3>Qualification</h3>";
+
+     sn7.forEach(function(value,inedx,array){
+        qulification += ++inedx +" ) "+value+"<br/>"
+  
+     });
+
+document.getElementById("qual").innerHTML= qulification;
+        
+    // QUestion 8
+    var studentName = ["Talha","Asad","Hamza"] ,
+    studentMarks =[220,290,265] ,
+    total = 300 ,message="";
+
+  for(i=0;i<3;i++)
+   { 
+     message +="Score of "+studentName[i]+" is : "+studentMarks[i]+" . Perccentage : "+ (studentMarks[i]/total * 100) + " %<br/>"  
+   }
+   document.getElementById("record").innerHTML= message;
+
+    // QUestion 9
+
+    var color = ["red","green","blue"];
+    var data ="<h3>Colors</h3>";
+
+    color.forEach(function(value,inedx,array){
+        data += ++inedx +" ) "+value+"<br/>"
+     });
+     
+     data +="<br/><br/>After adding a new color at first<br/>";
+
+  color.unshift(addColor);
+     color.forEach(function(value,inedx,array){
+        data += ++inedx +" ) "+value+"<br/>"
+     });
+     
+     var pushColor = prompt("Please add a new color at end");
+
+     data +="<br/><br/>After adding a new color at end<br/>";
+  
+     color.push(pushColor);
+
+     color.forEach(function(value,inedx,array){
+        data += ++inedx +" ) "+value+"<br/>"
+     });
+
+var moreColorNumber = +prompt("Please enter how many colors you want to add in start");
+var moreColorStart =[];
+var j = 1;
+for(i=0;i<moreColorNumber;i++)
+{ 
+    moreColorStart[i] = prompt( ("Please enter Color "+ j +"" ));
+    j++;
+}
+
+data +="<br/><br/>After adding a more colors at start<br/>";
+ 
+
+for(i=0;i<moreColorNumber;i++)
+{
+    color.push(moreColorStart[i]);
+}
+
+ 
+
+
+data +="<br/><br/>After remove a color at first<br/>";
+
+color.shift();
+   color.forEach(function(value,inedx,array){
+      data += ++inedx +" ) "+value+"<br/>"
+   });
+   
+
+   data +="<br/><br/>After remove a color at end<br/>";
+
+   color.pop();
+
+
+ color.forEach(function(value,inedx,array){
+        data += ++inedx +" ) "+value+"<br/>"
+     });
+
+
+ document.getElementById("record").innerHTML = data;
+  
+  
+    // QUestion 10
+   var std = [12,32,24,32,11,4];
+   document.getElementById("std").innerHTML = std.sort();
+  
+    // QUestion 12
+
+    var arr = ["This "," is "," my "," cat " ];
+   document.getElementById("jon").innerHTML = "Array : <br/>"+arr+"String : "+std.join(" ");
+
+    // QUestion 13
+
+
+    // QUestion 1
+    // QUestion 1
+    // QUestion 1
+    // QUestion 1
+    // QUestion 1
+    // QUestion 1
+
+</script>
+</html>

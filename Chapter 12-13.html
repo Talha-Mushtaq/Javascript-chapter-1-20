@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter 12-13 (Javascript)</title>
+</head>
+<body>
+    <h1 style="color: rebeccapurple;text-align: center">Chapter 12-13 ( Javascript )</h1>
+</body>
+<script>
+
+    // // QUestion 1
+    // var ch = prompt("Please enter a character");
+    //  if( (ch === 'A'|| ch > 'A') && (ch === 'Z'|| ch < 'Z') )
+    //     {
+    //          alert("You enter uppercase letter character and ASCII code of "+ch+" is "+ch.charCodeAt(0));
+    //     }
+
+    //     else if( (ch === 'a'|| ch > 'a') && (ch === 'z'|| ch < 'z') )
+    //     {
+    //          alert("You enter lowercase letter character and ASCII code of "+ch+" is "+ch.charCodeAt(0));
+    //     }
+
+    //     else if( (ch === '0'|| ch > '0') && (ch === '9'|| ch < '9') )
+    //     {
+    //          alert("You enter numbr and ASCII code of "+ch+" is "+ch.charCodeAt(0));
+    //     }
+
+    // // QUestion 2
+
+    //     var a = prompt("Please first number 0-9");
+    //     var b = prompt("Please second number 0-9");
+    //       if(a>b)
+    //       {
+    //           alert("First is greater than second");
+    //       }
+    //       else if(b>a)
+    //       {
+    //           alert("Second is greater than First");
+    //       }
+    //       else 
+    //       {
+    //           aler("First is equal to Second");
+    //       }
+    
+
+    // // QUestion 3
+
+    //     var a = prompt("Please first number to check it is +ve or -ve or zero");
+    //       if(a>0)
+    //       {
+    //           alert("Number is positive");
+    //       }
+    //       else if(a<0)
+    //       {
+    //           alert("Number is negative");
+    //       }
+    //       else 
+    //       {
+    //           aler("Number is zero");
+    //       }
+    
+
+    // // QUestion 4
+
+    // var ch =  prompt("Please enter a character");
+    //    var c = ch.charCodeAt(0);
+    //         (c ==="A"|| c ==="a"|| c ==="E"|| c ==="e"|| c ==="I"|| c ==="i"|| c ==="O"|| c ==="o"|| c ==="U"|| c ==="u"|| )
+    //          ?
+    //            alert("You enter a vowel")
+    //          :
+    //          alert("You enter non vowel");
+
+    // QUestion 5
+     var correctPass = 12345;
+     var pass =  prompt("Please enter a password");
+  if(pass == "")
+   {
+       alert("Please enter your password");
+   }
+   else if( +pass === correctPass)   // add + to pass (+pass) to convert the string to interger
+    {
+        alert("Correct! The password you entered matches the original password");
+    }
+  else
+  {
+      alert("Incorrect password");
+  }
+
+    // QUestion 6
+    var greeting;
+    var hour = 13;
+    if (hour < 18) {
+    greeting = "Good day";
+    }
+    else
+    {
+    greeting = "Good evening";
+    }
+
+    // QUestion 7
+
+   var time = 1900;
+   if(time >= 0000 && time < 1200)
+   {
+       alert("Good morning");
+   }
+   else if (time >= 1200 && time < 1700)
+   {
+       alert("Good afternoon");
+   }
+   else if (time >= 1700 && time < 2100)
+   {
+       alert("Good evening");
+   }
+   else if (time >= 2100 && time < 2359)
+   {
+       alert("Good night");
+   }
+
+
+</script>
+</html>
